@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
     res.end(JSON.stringify({ status: "UP" }));
   } 
   else {
-    res.writeHead(404, { "Content-Type": "text/plain" });
+    res.writeHead(504, { "Content-Type": "text/plain" });
     res.end("Page not found");
   }
 });
